@@ -1,0 +1,16 @@
+SELECT COUNT(promocode_id)/COUNT(*) * 100 AS Percen FROM orders;
+
+SELECT
+orders. promocode_id,
+promocodes.name,
+Count(*) AS quantity,
+Count(*) * promocodes.discount AS total 
+FROM orders
+  LEFT JOIN promocodes
+  ON orders.promocode_id = promocodes.id
+GROUP BY 
+  orders.promocode_id, 
+  promocodes.name
+ORDER BY
+  total DESC
+LIMIT 1
