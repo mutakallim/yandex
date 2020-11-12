@@ -3,7 +3,7 @@
 /.env.local
 /.env.*.local
 /venv
-/.gitignore
+.gitignore
 # Package manager files
 node_modules
 package-lock.json
