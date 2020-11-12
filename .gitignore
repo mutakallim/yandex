@@ -4,6 +4,7 @@
 /.env.*.local
 /venv
 .gitignore
+.ipynb_checkpoints
 # Package manager files
 node_modules
 package-lock.json
